@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  portfolio:
+    build: . # Indique à Docker Compose de construire l'image à partir du Dockerfile dans le répertoire actuel
+    ports:
+      - "8080:80" # Mappe le port 8080 de l'hôte au port 80 du conteneur
+    container_name: mon-portfolio-compose
+    restart: always # Redémarre le conteneur en cas de crash
