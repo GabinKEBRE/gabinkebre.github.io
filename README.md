@@ -45,6 +45,7 @@ css/redstyle.css : design personnalisé rouge/noir/blanc
 Dockerfile & docker-compose.yml : configuration conteneur
 
 🧠 À propos
+
 Ce projet m’a permis de consolider mes compétences en conteneurisation, administration Linux, design HTML/CSS, et mise en ligne d’un site statique. Il s’inscrit dans ma démarche active de valorisation professionnelle et dans ma recherche d’alternance en cybersécurité à partir de juillet 2025.
 
 📫 Contact : gabinkebre7957@gmall.com 
