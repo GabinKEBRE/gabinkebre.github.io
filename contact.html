@@ -1,308 +1,65 @@
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabin KEBRE – Contact</title>
+  <link rel="stylesheet" href="css/redstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <img src="images/photo_profil.jpg" loading="lazy" alt="Photo de Gabin" class="hero-pic" />
+        <h1>Contact</h1>
+        <p>Discutons alternance, projet ou tech !</p>
+        <a href="index.html" class="hero-btn">Retour à l'accueil</a>
+      </div>
+    </div>
+  </header>
 
-:root {
-  --red: #e50914;
-  --primary: #e50914;
-  --primary-dark: #b10610;
-  --black: #0e0e0e;
-  --white: #ffffff;
-  --gray: #cccccc;
-  --shadow: rgba(0, 0, 0, 0.3);
-  --text: #ffffff;
-  --text-light: #dddddd;
-}
+  <main>
+    <section class="section fade-section">
+      <h2>📬 Coordonnées</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:gabinkebre7957@gmail.com">gabinkebre7957@gmail.com</a></p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+2120621579728">+212 0621579728</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/gabin-kebre" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/GabinKEBRE" target="_blank">GitHub</a></p>
+      </div>
+    </section>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    <section class="section dark fade-section">
+      <h2>💬 Envoyez-moi un message</h2>
+      <form class="contact-form" action="https://formspree.io/f/xdkzvgag" method="POST">
+        <div class="form-group" style="--delay: 0.2s">
+          <label for="name"><i class="fas fa-user"></i> Nom</label>
+          <input type="text" id="name" name="name" required placeholder="Votre nom complet" />
+        </div>
+        <div class="form-group" style="--delay: 0.4s">
+          <label for="email"><i class="fas fa-envelope"></i> Email</label>
+          <input type="email" id="email" name="_replyto" required placeholder="Votre adresse email" />
+        </div>
+        <div class="form-group" style="--delay: 0.6s">
+          <label for="message"><i class="fas fa-comment"></i> Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Votre message ici..."></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="Message reçu depuis le portfolio de Gabin" />
+        <button type="submit" class="btn-submit"><i class="fas fa-paper-plane"></i> Envoyer</button>
+      </form>
+    </section>
+  </main>
 
-html {
-  scroll-behavior: smooth;
-}
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 KEBRE Gabin – Portfolio professionnel</p>
+    </div>
+  </footer>
+</body>
+</html>
 
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--black);
-  color: var(--white);
-  line-height: 1.6;
-}
-
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-.hero {
-  background: radial-gradient(circle, var(--black) 60%, var(--red) 100%);
-  text-align: center;
-  padding: 80px 20px 60px;
-  box-shadow: inset 0 0 40px var(--shadow);
-}
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.hero h1 {
-  font-size: 3em;
-  color: var(--white);
-  margin: 15px 0;
-}
-.hero p {
-  font-size: 1.3em;
-  color: var(--gray);
-}
-.hero-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid var(--red);
-  box-shadow: 0 0 10px var(--red);
-}
-.hero-social a {
-  color: var(--white);
-  font-size: 1.5em;
-  margin: 10px;
-  transition: color 0.3s ease;
-}
-.hero-social a:hover {
-  color: var(--red);
-}
-.hero-btn {
-  display: inline-block;
-  margin-top: 20px;
-  background: var(--red);
-  color: var(--white);
-  padding: 12px 25px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-.hero-btn:hover {
-  background: #b10610;
-}
-
-.nav-bar {
-  background-color: var(--black);
-  border-top: 1px solid var(--red);
-  border-bottom: 1px solid var(--red);
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-.nav-bar ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 10px 0;
-}
-.nav-bar li {
-  margin: 0 20px;
-}
-.nav-bar a {
-  color: var(--white);
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1em;
-  transition: color 0.3s ease;
-}
-.nav-bar a:hover {
-  color: var(--red);
-}
-
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-.section.dark {
-  background-color: #1c1c1c;
-}
-.section h2 {
-  font-size: 2.2em;
-  color: var(--red);
-  margin-bottom: 30px;
-}
-.section p {
-  font-size: 1.1em;
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 25px;
-}
-
-.grid-3 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-.card {
-  background-color: #1a1a1a;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px var(--shadow);
-  transition: transform 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-.card h3 {
-  color: var(--white);
-  font-size: 1.3em;
-  margin-bottom: 15px;
-}
-.card i {
-  color: var(--red);
-  margin-right: 8px;
-}
-
-.btn-alt {
-  display: inline-block;
-  background-color: var(--red);
-  color: var(--white);
-  padding: 12px 25px;
-  margin-top: 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-.btn-alt:hover {
-  background-color: #b10610;
-}
-
-.contact-info {
-  margin-top: 30px;
-}
-.contact-info p {
-  font-size: 1.1em;
-  margin: 10px 0;
-}
-.contact-info i {
-  color: var(--red);
-  margin-right: 10px;
-}
-.contact-info a {
-  color: var(--white);
-  text-decoration: none;
-}
-.contact-info a:hover {
-  color: var(--red);
-}
-
-/* Footer */
-footer {
-  background-color: var(--black);
-  color: var(--gray);
-  text-align: center;
-  padding: 25px 0;
-  font-size: 0.9em;
-  border-top: 1px solid var(--red);
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2em;
-  }
-  .hero-pic {
-    width: 120px;
-    height: 120px;
-  }
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
-  .nav-bar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
-.card {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 0.6s ease forwards;
-  animation-delay: var(--delay, 0s);
-}
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Animation fade-in au scroll */
-.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-section {
-  opacity: 0;
-  transform: translateY(40px);
-  will-change: opacity, transform;
-}
-
-/* === Contact Form === */
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
-  background-color: #1a1a1a;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px var(--shadow);
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-.contact-form .form-group {
-  margin-bottom: 20px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--text-light);
-  font-weight: 500;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 15px;
-  border-radius: 8px;
-  border: none;
-  background-color: #2a2a2a;
-  color: var(--text);
-  font-size: 1em;
-  outline: none;
-  transition: border 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border: 2px solid var(--primary);
-}
-
-.btn-submit {
-  display: inline-block;
-  background-color: var(--primary);
-  color: var(--text);
-  padding: 14px 28px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-  box-shadow: 0 6px 20px rgba(229, 9, 20, 0.4);
-}
-.btn-submit:hover {
-  background-color: var(--primary-dark);
-  transform: translateY(-3px);
-}
 
 
