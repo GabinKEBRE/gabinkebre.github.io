@@ -3,53 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KEBRE GABIN - Contact</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Gabin KEBRE – Contact</title>
+  <link rel="stylesheet" href="css/redstyle.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
-      <div class="profile-header">
-        <img src="images/photo_profil.jpg" alt="Photo de profil KEBRE Gabin" class="profile-pic" />
-        <div class="profile-info">
-          <h1>KEBRE GABIN</h1>
-          <p class="tagline">Technicien Spécialisé en Systèmes, Réseaux & Sécurité Informatique</p>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/gabin-kebre" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/GabinKEBRE" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
+      <div class="hero-content">
+        <img src="images/photo_profil.jpg" alt="Photo de Gabin" class="hero-pic" />
+        <h1>Contact</h1>
+        <p>Discutons alternance, projet ou tech !</p>
+        <a href="index.html" class="hero-btn">Retour à l'accueil</a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="experience.html">Expériences</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
   <main>
-    <section id="contact-info" class="container section-padding">
-      <h2>📞 Me Contacter</h2>
-      <p>N'hésitez pas à me joindre pour toute collaboration, alternance ou discussion technique :</p>
-
-      <div class="contact-details">
-        <p><i class="fas fa-phone-alt"></i> Mobile : <a href="tel:+2120621579728">+212 0621579728</a></p>
-        <p><i class="fas fa-envelope"></i> Email : <a href="mailto:gabinkebre7957@gmall.com">gabinkebre7957@gmall.com</a></p>
-        <p><i class="fas fa-map-marker-alt"></i> Localisation : Khénifra, Maroc</p>
-        <p><i class="fab fa-linkedin"></i> LinkedIn : <a href="https://www.linkedin.com/in/gabin-kebre" target="_blank">gabin-kebre</a></p>
-        <p><i class="fab fa-github"></i> GitHub : <a href="https://github.com/GabinKEBRE" target="_blank">GabinKEBRE</a></p>
+    <section class="section">
+      <h2>📬 Coordonnées</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:gabinkebre7957@gmall.com">gabinkebre7957@gmall.com</a></p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+2120621579728">+212 0621579728</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/gabin-kebre" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/GabinKEBRE" target="_blank">GitHub</a></p>
       </div>
     </section>
 
-    <!-- Section Formulaire de Contact -->
-    <section class="container section-padding">
-      <h2>💬 Formulaire de Contact</h2>
+    <section class="section dark">
+      <h2>💬 Envoyez-moi un message</h2>
       <form class="contact-form">
         <div class="form-group">
           <label for="name">Nom</label>
@@ -57,11 +40,11 @@
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Votre adresse email" />
+          <input type="email" id="email" name="email" placeholder="Votre email" />
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message ici..."></textarea>
         </div>
         <button type="submit" class="btn-submit">Envoyer</button>
       </form>
@@ -70,11 +53,9 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 KEBRE Gabin. Tous droits réservés.</p>
-      <p>Portfolio personnel centré sur l’administration système, le réseau & la cybersécurité.</p>
+      <p>&copy; 2025 KEBRE Gabin – Portfolio professionnel</p>
     </div>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>
 
