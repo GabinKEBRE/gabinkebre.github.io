@@ -8,7 +8,7 @@ intaller docker
 Ajouter  l'utilisateur courant au groupe docker 
 # sudo usermod -aG docker $USER
 cloner le depot 
-# git clone https://github.com/GabinKEBRE/mon-portfolio-docker.git
+# git clone https://github.com/GabinKEBRE/gabinkebre.github.io.git
 adapter les fichiers html à votre portfolio 
 creer un image  personnalisée (voir le Dockerfile)
 construire l'image :
