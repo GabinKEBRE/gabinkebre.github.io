@@ -1,24 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Exemple simple : ajouter une classe 'fade-in' aux sections au scroll
-    const sections = document.querySelectorAll('section');
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
+  const sections = document.querySelectorAll('.fade-section');
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
-                observer.unobserve(entry.target); // Ne l'observer qu'une fois
-            }
-        });
-    }, observerOptions);
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
 
-    sections.forEach(section => {
-        observer.observe(section);
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in');
+        observer.unobserve(entry.target);
+      }
     });
+  }, observerOptions);
 
-    // Vous pouvez ajouter d'autres scripts ici pour des effets de texte, galerie d'images, etc.
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  // Animation formulaire contact
+  const formGroups = document.querySelectorAll('.form-group');
+  formGroups.forEach((group, index) => {
+    group.style.animation = `fadeInUp 0.6s ease ${index * 0.2 + 0.2}s forwards`;
+  });
 });
+
