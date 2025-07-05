@@ -3,90 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KEBRE GABIN - Expériences Professionnelles</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Gabin KEBRE – Expériences & Formation</title>
+  <link rel="stylesheet" href="css/redstyle.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
-      <div class="profile-header">
-        <img src="images/photo_profil.jpg" alt="Photo de profil KEBRE Gabin" class="profile-pic" />
-        <div class="profile-info">
-          <h1>KEBRE GABIN</h1>
-          <p class="tagline">Technicien Spécialisé en Systèmes, Réseaux & Sécurité Informatique</p>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/gabin-kebre" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/GabinKEBRE" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
+      <div class="hero-content">
+        <img src="images/photo_profil.jpg" alt="Photo de Gabin" class="hero-pic" />
+        <h1>Expériences & Formation</h1>
+        <p>Stagiaire, technicien, étudiant en cybersécurité</p>
+        <a href="index.html" class="hero-btn">Retour à l'accueil</a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="experience.html" class="active">Expériences</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
   <main>
-    <section id="professional-experience" class="container section-padding">
+    <section class="section">
       <h2>💼 Expériences Professionnelles</h2>
 
-      <article class="experience-item">
-        <h3>🔌 Stagiaire Technicien Réseau</h3>
-        <p class="company-name">Centre Universitaire Hospitalier (CUH) – Khénifra</p>
-        <p class="duration">Mars 2025 – Avril 2025</p>
-        <ul>
-          <li>Assistance à la maintenance et surveillance du réseau informatique (stabilité & performance).</li>
-          <li>Support technique de premier niveau : dépannage, résolution de problèmes matériels & logiciels.</li>
-        </ul>
-      </article>
+      <div class="grid-3">
+        <div class="card">
+          <h3><i class="fas fa-network-wired"></i> CUH Khénifra</h3>
+          <p><strong>Stagiaire Technicien Réseau</strong><br> Mars – Avril 2025</p>
+          <p>Maintenance du réseau, support aux utilisateurs, dépannage matériel/logiciel, surveillance et diagnostics.</p>
+        </div>
 
-      <article class="experience-item">
-        <h3>🖥️ Stagiaire Support Informatique</h3>
-        <p class="company-name">Chambre de Commerce et Industrie – Béni Mellal-Khénifra</p>
-        <p class="duration">Août 2024 – Septembre 2024</p>
-        <ul>
-          <li>Installation et configuration de postes de travail selon les standards de l’entreprise.</li>
-          <li>Gestion quotidienne du réseau local (LAN), optimisation de la fluidité & sécurité.</li>
-        </ul>
-      </article>
+        <div class="card">
+          <h3><i class="fas fa-laptop-code"></i> CCI Béni Mellal</h3>
+          <p><strong>Stagiaire Support Informatique</strong><br> Août – Septembre 2024</p>
+          <p>Installation de postes de travail, configuration réseau local, sécurité et conformité technique.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="section dark">
       <h2>🎓 Parcours Académique</h2>
 
-      <article class="education-item">
-        <h3>D.T.S – Systèmes, Réseaux & Sécurité Informatique</h3>
-        <p class="school">ISTA Khénifra, Maroc</p>
-        <p class="duration">2023 – 2025</p>
-        <p>Formation approfondie sur l’administration des systèmes (Linux, Windows Server), les réseaux d’entreprise, la virtualisation et les bases en cybersécurité.</p>
-      </article>
+      <div class="grid-3">
+        <div class="card">
+          <h3><i class="fas fa-graduation-cap"></i> ISTA Khénifra</h3>
+          <p><strong>D.T.S Systèmes, Réseaux & Sécurité</strong><br> 2023 – 2025</p>
+          <p>Formation complète en administration Linux/Windows, réseau, virtualisation et sécurité informatique.</p>
+        </div>
 
-      <article class="education-item">
-        <h3>Année Préparatoire – Sciences Exactes & Appliquées</h3>
-        <p class="school">Université Joseph Ki-Zerbo, Ouagadougou</p>
-        <p class="duration">2022 – 2023</p>
-        <p>Renforcement des connaissances fondamentales en mathématiques, physique et informatique.</p>
-      </article>
+        <div class="card">
+          <h3><i class="fas fa-university"></i> Univ. Ki-Zerbo</h3>
+          <p><strong>Année préparatoire – Sciences exactes</strong><br> 2022 – 2023</p>
+          <p>Maths, physique, informatique. Base scientifique pour études techniques.</p>
+        </div>
 
-      <article class="education-item">
-        <h3>Baccalauréat Scientifique</h3>
-        <p class="school">Lycée Municipal de Yagma, Ouagadougou</p>
-        <p class="duration">2021 – 2022</p>
-      </article>
+        <div class="card">
+          <h3><i class="fas fa-school"></i> Lycée Yagma</h3>
+          <p><strong>Baccalauréat Scientifique</strong><br> 2021 – 2022</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 KEBRE Gabin. Tous droits réservés.</p>
-      <p>Portfolio personnel centré sur l’administration système, le réseau & la cybersécurité.</p>
+      <p>&copy; 2025 KEBRE Gabin – Portfolio professionnel</p>
     </div>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>
+
