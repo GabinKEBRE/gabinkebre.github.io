@@ -3,114 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KEBRE GABIN - Technicien Systèmes, Réseaux & Sécurité</title>
-
-  <!-- Polices et icônes -->
+  <title>Gabin KEBRE - Portfolio Cybersécurité</title>
+  <link rel="stylesheet" href="css/redstyle.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-
-  <!-- Feuille de style -->
-  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
+  <header class="hero" id="accueil">
     <div class="container">
-      <div class="profile-header">
-        <img src="images/photo_profil.jpg" alt="Photo de profil KEBRE Gabin" class="profile-pic" />
-        <div class="profile-info">
-          <h1>KEBRE GABIN</h1>
-          <p class="tagline">Technicien Spécialisé en Systèmes, Réseaux & Sécurité Informatique</p>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/gabin-kebre" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/GabinKEBRE" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
+      <div class="hero-content">
+        <img src="images/photo_profil.jpg" alt="Photo de Gabin KEBRE" class="hero-pic" />
+        <h1>Gabin KEBRE</h1>
+        <p>Technicien Systèmes, Réseaux & Sécurité Informatique</p>
+        <div class="hero-social">
+          <a href="https://linkedin.com/in/gabin-kebre" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/GabinKEBRE" target="_blank"><i class="fab fa-github"></i></a>
         </div>
+        <a href="#contact" class="hero-btn">Contactez-moi</a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Accueil</a></li>
-          <li><a href="projets.html">Projets</a></li>
-          <li><a href="experience.html">Expériences</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="#accueil">Accueil</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#alternance">Alternance</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <main>
-    <section class="intro container section-padding">
-      <h2>Bienvenue sur mon portfolio !</h2>
-      <p>Passionné par les systèmes, les réseaux et la cybersécurité, je mets mes compétences au service de solutions numériques fiables et sécurisées. Découvrez mes projets et expériences.</p>
-    </section>
-
-    <section id="objective" class="container section-padding bg-light">
-      <h2>🎯 Objectif Professionnel</h2>
-      <p>Actuellement en fin de formation à l'ISTA Khénifra, je suis à la recherche d'une opportunité dès juillet 2025 pour intégrer une entreprise dynamique. Mon ambition est de contribuer à des projets innovants en exploitant mes compétences techniques pour optimiser l'infrastructure numérique.</p>
-    </section>
-
-    <section id="skills" class="container section-padding">
-      <h2>🧠 Compétences Techniques</h2>
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3><i class="fas fa-network-wired icon"></i> Réseaux & Infrastructure</h3>
-          <ul>
-            <li>Configuration de switchs, routeurs, VPN, VoIP, VLAN</li>
-            <li>Admin Windows Server : AD DS, DNS, DHCP, GPO, DFS</li>
-            <li>Admin Linux : DHCP, HTTPS, NFS, SAMBA, Nagios</li>
-            <li>SDN : OpenFlow, OpenDaylight, VXLAN</li>
-          </ul>
+    <section id="competences" class="section">
+      <h2>🛠️ Compétences Techniques</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3><i class="fas fa-network-wired"></i> Réseaux & Infrastructure</h3>
+          <p>Switchs, routeurs, VLAN, VoIP, VPN, SDN. Windows Server & Linux admin (AD, DNS, DHCP).</p>
         </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-cloud icon"></i> Cloud & Virtualisation</h3>
-          <ul>
-            <li>Azure, AWS, GCP</li>
-            <li>Proxmox, VMware ESXi</li>
-          </ul>
+        <div class="card">
+          <h3><i class="fas fa-cloud"></i> Cloud & Virtualisation</h3>
+          <p>Azure, GCP, VMware ESXi, Proxmox. Déploiement de VM, optimisation, snapshots & monitoring.</p>
         </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-shield-alt icon"></i> Sécurité</h3>
-          <ul>
-            <li>Pare-feu, ACL, IDS/IPS, VPN IPsec, proxy</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-code icon"></i> Programmation & Scripting</h3>
-          <ul>
-            <li>Python, SQL</li>
-            <li>Scripts Bash/PowerShell</li>
-          </ul>
-        </div>
-        <div class="skill-category">
-          <h3><i class="fas fa-desktop icon"></i> Outils</h3>
-          <ul>
-            <li>Microsoft Office</li>
-            <li>Veille technologique active</li>
-          </ul>
+        <div class="card">
+          <h3><i class="fas fa-shield-alt"></i> Sécurité Informatique</h3>
+          <p>Pare-feux, IDS/IPS, VPN IPsec, proxy, Hydra, Nmap. Gestion d’accès, audits & tests d’intrusion.</p>
         </div>
       </div>
     </section>
 
-    <section id="certifications" class="container section-padding bg-light">
-      <h2>📚 Certifications & Atouts</h2>
-      <div class="qualities-grid">
-        <div class="quality-item"><i class="fas fa-brain icon"></i> Initiation à l'IA</div>
-        <div class="quality-item"><i class="fas fa-comments icon"></i> Art oratoire</div>
-        <div class="quality-item"><i class="fas fa-lightbulb icon"></i> Analyse & résolution</div>
-        <div class="quality-item"><i class="fas fa-users icon"></i> Travail en équipe</div>
-        <div class="quality-item"><i class="fas fa-handshake icon"></i> Communication</div>
-        <div class="quality-item"><i class="fas fa-file-alt icon"></i> Rédaction de business plans</div>
+    <section id="alternance" class="section dark">
+      <h2>🎯 Objectif Alternance 2025</h2>
+      <p>À la recherche d’une entreprise pour une alternance en <strong>réseaux & cybersécurité</strong> dès juillet 2025.</p>
+      <p>Je souhaite contribuer à des projets techniques, renforcer ma pratique DevOps (Docker, Ansible) et assurer la sécurité des infrastructures numériques.</p>
+      <a href="mailto:gabinkebre7957@gmall.com" class="btn-alt">Proposez une collaboration</a>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>📩 Contact</h2>
+      <p>Envie d'échanger, collaborer ou me proposer une alternance ? Je suis joignable via les canaux suivants :</p>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:gabinkebre7957@gmall.com">gabinkebre7957@gmall.com</a></p>
+        <p><i class="fas fa-phone-alt"></i> <a href="tel:+2120621579728">+212 0621579728</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/gabin-kebre" target="_blank">LinkedIn</a></p>
+        <p><i class="fab fa-github"></i> <a href="https://github.com/GabinKEBRE" target="_blank">GitHub</a></p>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 KEBRE Gabin. Tous droits réservés.</p>
-      <p>Contact : <a href="mailto:kebre.gabin@example.com">kebre.gabin@example.com</a></p>
+      <p>&copy; 2025 KEBRE Gabin – Portfolio professionnel</p>
     </div>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
+
 
