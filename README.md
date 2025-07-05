@@ -14,18 +14,22 @@ Ce dépôt contient mon portfolio professionnel déployé via Docker. Il présen
    ```bash
    sudo apt update && sudo apt upgrade -y
 2. **Installer Docker**
-sudo apt install docker.io -y
-sudo usermod -aG docker $USER
+   ```bash
+   sudo apt install docker.io -y
+   sudo usermod -aG docker $USER
 3. **Cloner le dépôt GitHub**
-git clone https://github.com/GabinKEBRE/gabinkebre.github.io.git
-cd gabinkebre.github.io
+   ```bash
+   git clone https://github.com/GabinKEBRE/gabinkebre.github.io.git
+   cd gabinkebre.github.io
 4. **Adapter les fichiers HTML/CSS à votre portfolio.**
 5. **Construire l’image Docker :**
- docker build -t gabin-portfolio .
+   ```bash
+   docker build -t gabin-portfolio .
 6. **Démarrer le conteneur :**
-   docker run -d -p 8080:80 --name portfolio-container gabin-portfolio
+    ```bash
+    docker run -d -p 8080:80 --name portfolio-container gabin-portfolio
 7. **Accéder au site localement :**
-   http://localhost:8080
+    http://localhost:8080
 
    📁 Structure du projet
 index.html : page d’accueil one-page
