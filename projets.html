@@ -3,80 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KEBRE GABIN - Mes Projets</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Gabin KEBRE – Mes Projets</title>
+  <link rel="stylesheet" href="css/redstyle.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-  <header>
+  <header class="hero">
     <div class="container">
-      <div class="profile-header">
-        <img src="images/photo_profil.jpg" alt="Photo de profil KEBRE Gabin" class="profile-pic" />
-        <div class="profile-info">
-          <h1>KEBRE GABIN</h1>
-          <p class="tagline">Technicien Spécialisé en Systèmes, Réseaux & Sécurité Informatique</p>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/gabin-kebre" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/GabinKEBRE" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
+      <div class="hero-content">
+        <img src="images/photo_profil.jpg" alt="Photo de Gabin" class="hero-pic" />
+        <h1>Mes Projets</h1>
+        <p>Déploiement, automatisation, sécurité & supervision</p>
+        <a href="index.html" class="hero-btn">Retour à l'accueil</a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="projets.html" class="active">Projets</a></li>
-          <li><a href="experience.html">Expériences</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
   <main>
-    <section id="projects-list" class="container section-padding">
-      <h2>🚀 Mes Réalisations</h2>
+    <section class="section">
+      <h2>🚀 Réalisations Techniques</h2>
 
-      <article class="project-item">
-        <h3>🔧 Déploiement de Portfolio avec Docker</h3>
-        <p class="project-meta"><i class="fas fa-tools"></i> Docker, Nginx, Git, GitHub</p>
-        <p>Conteneurisation complète d’un site portfolio statique avec Docker. Utilisation de `Dockerfile` pour créer des images personnalisées, et `docker-compose.yml` pour l’orchestration du service web avec NGINX. Ce projet garantit un déploiement reproductible et indépendant de l’environnement.</p>
-        <a href="https://github.com/GabinKEBRE/mon-portfolio-docker" target="_blank" class="project-link"><i class="fab fa-github"></i> Voir le code sur GitHub</a>
-      </article>
+      <div class="grid-3">
+        <div class="card">
+          <h3><i class="fab fa-docker"></i> Portfolio Dockerisé</h3>
+          <p>Conteneurisation complète de mon site web via Docker et NGINX. Utilisation de `Dockerfile` & `docker-compose.yml` pour un déploiement reproductible.</p>
+          <a href="https://github.com/GabinKEBRE/mon-portfolio-docker" target="_blank" class="btn-alt"><i class="fab fa-github"></i> Voir le repo</a>
+        </div>
 
-      <article class="project-item">
-        <h3>📡 Réseau Sécurisé Simulé (GNS3, Packet Tracer)</h3>
-        <p class="project-meta"><i class="fas fa-project-diagram"></i> GNS3, Packet Tracer, Cisco, Firewall</p>
-        <p>Création d’une architecture réseau complète avec segmentation VLAN, routage dynamique, pare-feux et points d’accès sans fil. Tests de résilience réseau et configuration de sécurité dans des environnements simulés Cisco.</p>
-      </article>
+        <div class="card">
+          <h3><i class="fas fa-project-diagram"></i> Réseau Simulé Sécurisé</h3>
+          <p>Architecture réseau via GNS3 et Packet Tracer, avec segmentation VLAN, pare-feux, routage dynamique et test IDS/IPS.</p>
+        </div>
 
-      <article class="project-item">
-        <h3>🖥️ Infrastructure Virtualisée (Proxmox & VMware)</h3>
-        <p class="project-meta"><i class="fas fa-server"></i> Hyperviseurs, VMs, snapshots</p>
-        <p>Déploiement et administration de machines virtuelles sur Proxmox VE et VMware ESXi. Gestion des ressources, sauvegarde via snapshots, et optimisation de performances serveur pour environnement de tests.</p>
-      </article>
+        <div class="card">
+          <h3><i class="fas fa-server"></i> Virtualisation avec Proxmox</h3>
+          <p>Déploiement de VM sur Proxmox VE & VMware ESXi. Gestion de snapshots, ressources CPU/mémoire et supervision.</p>
+        </div>
 
-      <article class="project-item">
-        <h3>🤖 Scripts d’automatisation Linux & Windows</h3>
-        <p class="project-meta"><i class="fas fa-terminal"></i> Bash, PowerShell</p>
-        <p>Écriture de scripts pour automatiser des tâches d’administration : mise à jour des paquets, backup, gestion d’utilisateurs, monitoring. Gains de temps importants et réduction d’erreurs humaines.</p>
-      </article>
+        <div class="card">
+          <h3><i class="fas fa-terminal"></i> Scripts Linux & Windows</h3>
+          <p>Automatisation de tâches d’administration système : backup, monitoring, création d’utilisateurs via Bash & PowerShell.</p>
+        </div>
 
-      <article class="project-item">
-        <h3>🔐 Gestion de parc avec GLPI & FusionInventory</h3>
-        <p class="project-meta"><i class="fas fa-desktop"></i> GLPI, AD, inventaire, tickets</p>
-        <p>Déploiement d’un système de gestion d’actifs informatiques incluant la synchronisation Active Directory, la réservation de matériel, le traitement des tickets de support, et l’inventaire automatisé via FusionInventory.</p>
-      </article>
+        <div class="card">
+          <h3><i class="fas fa-desktop"></i> GLPI & FusionInventory</h3>
+          <p>Implémentation d’un système de gestion de parc informatique : tickets, AD sync, réservation d’équipements, inventaire automatique.</p>
+        </div>
+
+        <div class="card">
+          <h3><i class="fas fa-lock"></i> Tests de Sécurité Hydra/Nmap</h3>
+          <p>Utilisation d’outils d’analyse comme Hydra pour les tests de brute-force, et Nmap pour le scan réseau & vérification des ports/services actifs.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 KEBRE Gabin. Tous droits réservés.</p>
-      <p>Portfolio personnel centré sur l’administration système, le réseau & la cybersécurité.</p>
+      <p>&copy; 2025 KEBRE Gabin – Portfolio professionnel</p>
     </div>
   </footer>
-  <script src="js/main.js"></script>
 </body>
 </html>
+
 
