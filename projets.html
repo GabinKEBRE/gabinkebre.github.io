@@ -3,20 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabin KEBRE – Mes Projets</title>
+  <title>Projets – Gabin KEBRE</title>
   <link rel="stylesheet" href="css/redstyle.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <script defer src="js/main.js"></script>
 </head>
 <body>
+
+  <!-- Barre de navigation cohérente -->
+  <nav class="nav-bar">
+    <ul>
+      <li><a href="index.html#accueil">Accueil</a></li>
+      <li><a href="projets.html">Projets</a></li>
+      <li><a href="experience.html">Expérience</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
   <header class="hero">
     <div class="container">
       <div class="hero-content">
         <img src="images/photo_profil.jpg" alt="Photo de Gabin" class="hero-pic" />
         <h1>Mes Projets</h1>
         <p>Déploiement, automatisation, sécurité & supervision</p>
-        <a href="index.html" class="hero-btn">Retour à l'accueil</a>
       </div>
     </div>
   </header>
@@ -24,7 +34,6 @@
   <main>
     <section class="section fade-section">
       <h2>🚀 Réalisations Techniques</h2>
-
       <div class="grid-3">
         <div class="card">
           <h3><i class="fas fa-code-branch"></i> Déploiement Ansible Nginx</h3>
@@ -34,7 +43,7 @@
 
         <div class="card">
           <h3><i class="fab fa-docker"></i> Portfolio Dockerisé</h3>
-          <p>Conteneurisation complète de mon site web via Docker et NGINX. Utilisation de `Dockerfile` & `docker-compose.yml` pour un déploiement reproductible.</p>
+          <p>Conteneurisation complète de mon site web via Docker et NGINX. Utilisation de Dockerfile & docker-compose.yml pour un déploiement reproductible.</p>
           <a href="https://github.com/GabinKEBRE/mon-portfolio-docker" target="_blank" class="btn-alt"><i class="fab fa-github"></i> Voir le repo</a>
         </div>
 
@@ -71,7 +80,6 @@
       <p>&copy; 2025 KEBRE Gabin – Portfolio professionnel</p>
     </div>
   </footer>
+
 </body>
 </html>
-
-
